@@ -2,12 +2,7 @@
 {
     public class Day1
     {
-        private readonly List<string> input = new();
-
-        public Day1()
-        {
-            input = File.ReadAllLines("Day1/Day1input.txt").ToList();
-        }
+        private readonly List<string> input = FileHelper.ReadFile("Day1/Day1input.txt");
 
         public int Day1Part1()
         {
